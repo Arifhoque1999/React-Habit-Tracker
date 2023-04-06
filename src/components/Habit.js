@@ -2,8 +2,8 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { deleteHabit } from "../redux/features/habitSlice";
 import { useNavigate } from "react-router-dom";
-import { toast, ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import { toast } from "react-toastify";
+
 
 const Habit = ({ habit }) => {
   const today = new Date();
@@ -40,7 +40,7 @@ const Habit = ({ habit }) => {
   return (
     <div className="habit">
       <div className="habit-left">
-        <i class="fa-solid fa-heart-circle-bolt"></i>
+        <i className="fa-solid fa-heart-circle-bolt"></i>
         <div>
           <h4 style={{ textTransform: "capitalize" }}>{habit.name}</h4>
           <p className="day-complete">
@@ -54,7 +54,7 @@ const Habit = ({ habit }) => {
           Week View
         </div>
         <i className="fa-solid fa-trash" onClick={handleDelete}></i>
-        <ToastContainer />
+        
       </div>
     </div>
   );

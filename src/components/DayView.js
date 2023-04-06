@@ -5,9 +5,7 @@ import {
   habitNone,
   habitUnDone,
 } from "../redux/features/habitSlice";
-import { toast, ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-
+import { toast } from "react-toastify";
 const DayView = ({ day }) => {
   // get today date
   const today = new Date();
@@ -86,7 +84,7 @@ const DayView = ({ day }) => {
         }
         onClick={markToNone}
       ></i>
-      <ToastContainer />
+      
     </div>
   );
 };

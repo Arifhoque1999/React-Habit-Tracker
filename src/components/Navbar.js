@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { addHabit } from "../redux/features/habitSlice";
-import { toast, ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import { toast } from "react-toastify";
 
 const Navbar = ({ name }) => {
   // call use dispatch hook a variable call dispatch
@@ -88,18 +87,18 @@ const Navbar = ({ name }) => {
             </div>
             <div className="modal-footer">
               <button
-                type="button"
+                // type="button"
                 className="btn btn-secondary"
                 data-bs-dismiss="modal"
               >
                 Cancel
               </button>
               <button
-                type="button"
+                // type="button"
                 className="btn btn-primary"
                 onClick={handleSave}
               >
-                <ToastContainer />
+                
                 Save
               </button>
             </div>
